@@ -1,0 +1,9 @@
+[[source]]
+url = "https://artifactory.vant.com/artifactory/api/pypi/pypi-all/simple"
+verify_ssl = true
+name = "artifactory"
+
+[packages]
+pyyaml = "==3.11"
+
+[dev-packages]
