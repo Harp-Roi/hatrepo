@@ -1,0 +1,110 @@
+<!doctype html>
+
+
+
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>UBS Online Services</title>
+  <meta name="description" content="UBS Online Services">
+  <meta name="author" content="UBS">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/wma-login.css?version1.5">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/neo-core-css.white.css">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/neo-masthead.white.css">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/neo-buttons.white.css">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/neo-icons.css">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/ubs-notification.white.css">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/ubs-flyouts.white.css">
+  <link rel="stylesheet" href="/olsauth/public/common/nlp/css/wma-footer-view.css">
+
+  <script src="/olsauth/public/common/devicedna/riskminder-client.js?version2.0"></script>
+  <script src="/olsauth/public/common/devicedna/riskminder.js?version2.0"></script>
+
+
+  <!-- PENTEST#6502 Avoid Sensitive Information Cached -->
+  <META HTTP-EQUIV="Cache-Control" CONTENT="No-Cache,No-Store">
+  <META HTTP-EQUIV="Pragma" CONTENT="No-Cache">
+  <META HTTP-EQUIV="Expires" CONTENT="0">
+
+  <!-- PENTEST#11655 - Avoid Clickjacking -->
+  <style id="antiClickjack">body{display:none !important;}</style>
+  <script type="text/javascript">
+    if (self === top) {
+      var antiClickjack = document.getElementById("antiClickjack");
+      antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+      top.location = self.location;
+    }
+  </script>
+</head>
+
+<body onload="init();">
+  <header role="banner">
+    <nav class="masthead">
+      <a class="brand" title="" href="/">Home</a>
+    </nav>
+  </header>
+  <div class="wma">
+  </div>
+  <footer>
+  </footer>
+
+  <script src="/olsauth/public/common/nlp/js/wma-browsercheck.min.js?version3.3"></script>
+  <script src="/olsauth/public/common/nlp/js/lib/underscore/underscore-min.js"></script>
+  <script src="/olsauth/public/common/nlp/js/lib/d3/d3.min.js"></script>
+  <script src="/olsauth/public/common/nlp/js/olsconstant.js"></script>
+
+  <script type="text/javascript">
+
+    var portal = 'ols';
+    var remoteAddr = '98.113.53.61';
+    var titleText =  eval(portal+'_TitleText');
+    var firmName;
+
+    if (portal == olsPortal) {
+      firmName = "fs";
+      document.title = "UBS Online Services";
+    } else if(portal == mbPortal) {
+      firmName = "fs";
+      document.title = "UBS Online Services Mailbox";
+    } else if(portal == atnPortal) {
+      firmName = "fs";
+      document.title = "Attorney Network UBS Financial Services";
+    } else if(portal == hfPortal) {
+      firmName = "fs";
+      document.title = "UBS Hedge Fund Services";
+    } else if(portal == pbPortal) {
+      firmName = "pb";
+      document.title = "UBS Private Bank";
+    } else if(portal == pbmbPortal) {
+      firmName = "pb";
+      document.title = "UBS Private Bank Mailbox";
+    } else if(portal == securePickupPortal) {
+      firmName = "fs";
+      document.title = "UBS Secure Document Pick Up";
+    }
+
+    securePickupMessageIdAttribute = "null";
+    securePickupErrorAttribute = "null";
+
+    var statusLogout = 1;
+    var statusInactivityLogout = 2;
+    var statusSessionEndLogout = 3;
+    var statusPrivateBankLogout = 4;
+    var statusAccountLocked = 10;
+    var statusPasswordResetConfirmation = 70;
+    var statusAnomalyLocked = 20;
+    var statusInvalidSession = 30;
+    var statusPinDoesNotMatch = 80;
+
+  </script>
+  <script src="/olsauth/public/common/nlp/js/ubs-flyouts.min.js?version1.8"></script>
+  <script src="/olsauth/public/common/nlp/js/wma-footer-view.min.js?version1.8"></script>
+  <script src="/olsauth/public/common/nlp/js/wma-login.min.js?version1.18"></script>
+</body>
+
+</html>

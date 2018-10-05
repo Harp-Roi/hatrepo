@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CstmrCdtTrfInitn>
+        <GrpHdr>
+            <MsgId>139-20180831171612</MsgId>
+            <CreDtTm>2018-08-31T17:16:12</CreDtTm>
+            <NbOfTxs>6</NbOfTxs>
+            <CtrlSum>277869.18</CtrlSum>
+            <InitgPty>
+                <Nm>Myovant Sciences, Inc.</Nm>
+            </InitgPty>
+        </GrpHdr>
+        <PmtInf>
+            <PmtInfId>139-MSI_WI_0907</PmtInfId>
+            <PmtMtd>TRF</PmtMtd>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>URGP</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <ReqdExctnDt>2018-08-31</ReqdExctnDt>
+            <Dbtr>
+                <Nm>Myovant Sciences, Inc.</Nm>
+                <PstlAdr>
+                    <Ctry>US</Ctry>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                        <Othr>
+                            <Id>919177605</Id>
+                        </Othr>
+                </Id>
+                <Ccy>USD</Ccy>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                        <BIC>CHASUS33</BIC>
+                    <PstlAdr>
+                        <Ctry>US</Ctry>
+                    </PstlAdr>
+                </FinInstnId>
+            </DbtrAgt>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId>000001391</EndToEndId>
+                    </PmtId>
+                    <Amt>
+                        <InstdAmt Ccy="USD">6596.60</InstdAmt>
+                    </Amt>
+                    <ChrgBr>SHAR</ChrgBr>
+                    <CdtrAgt>
+                        <FinInstnId>
+                                <BIC>DABAGB2L</BIC>
+                            <Nm>Danske Bank</Nm>
+                            <PstlAdr>
+                                <Ctry>GB</Ctry>
+                            </PstlAdr>
+                        </FinInstnId>
+                    </CdtrAgt>
+                    <Cdtr>
+                        <Nm>CRF Health Management Limited</Nm>
+                        <PstlAdr>
+                            <StrtNm>229-243 Shepherds Bush Road</StrtNm>
+                                <PstCd>W6-7AN</PstCd>
+                                <TwnNm>Hammersmith, London</TwnNm>
+                            <Ctry>GB</Ctry>
+                        </PstlAdr>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                                <IBAN>GB46DABA30128122027166</IBAN>
+                        </Id>
+                    </CdtrAcct>
+                        <RmtInf>
+                            <Ustrd>INV-CHM-02945, INV-CHM-02942, INV-CHM-02939</Ustrd>
+                        </RmtInf>
+                </CdtTrfTxInf>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId>000001392</EndToEndId>
+                    </PmtId>
+                    <Amt>
+                        <InstdAmt Ccy="EUR">8267.65</InstdAmt>
+                    </Amt>
+                    <ChrgBr>SHAR</ChrgBr>
+                    <CdtrAgt>
+                        <FinInstnId>
+                                <BIC>BSABESBB</BIC>
+                            <Nm>Banc Sabadell</Nm>
+                            <PstlAdr>
+                                <Ctry>ES</Ctry>
+                            </PstlAdr>
+                        </FinInstnId>
+                    </CdtrAgt>
+                    <Cdtr>
+                        <Nm>Develop BioPharma Consulting S.L.</Nm>
+                        <PstlAdr>
+                            <StrtNm>Ronda De Sante Pere, 52, Atoco</StrtNm>
+                                <PstCd>08010</PstCd>
+                                <TwnNm>Barcelona</TwnNm>
+                                <CtrySubDvsn>Catalonia</CtrySubDvsn>
+                            <Ctry>ES</Ctry>
+                        </PstlAdr>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                                <IBAN>ES4200810200210003270932</IBAN>
+                        </Id>
+                    </CdtrAcct>
+                        <RmtInf>
+                            <Ustrd>18.May.21-MYO, 0018-MYO</Ustrd>
+                        </RmtInf>
+                </CdtTrfTxInf>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId>000001393</EndToEndId>
+                    </PmtId>
+                    <Amt>
+                        <InstdAmt Ccy="USD">15646.50</InstdAmt>
+                    </Amt>
+                    <ChrgBr>SHAR</ChrgBr>
+                    <CdtrAgt>
+                        <FinInstnId>
+                                <BIC>BOFMCAM2</BIC>
+                            <Nm>Bank of Montreal</Nm>
+                            <PstlAdr>
+                                <Ctry>CA</Ctry>
+                            </PstlAdr>
+                        </FinInstnId>
+                    </CdtrAgt>
+                    <Cdtr>
+                        <Nm>Intrinsik Health Sciences Inc</Nm>
+                        <PstlAdr>
+                            <StrtNm>6605 HURONTARIO ST</StrtNm>
+                                <PstCd>L5T 0A3</PstCd>
+                                <TwnNm>MISSISSAUGA</TwnNm>
+                                <CtrySubDvsn>ON</CtrySubDvsn>
+                            <Ctry>CA</Ctry>
+                        </PstlAdr>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                                <Othr>
+                                    <Id>297024602067</Id>
+                                </Othr>
+                        </Id>
+                    </CdtrAcct>
+                        <RmtInf>
+                            <Ustrd>61621</Ustrd>
+                        </RmtInf>
+                </CdtTrfTxInf>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId>000001394</EndToEndId>
+                    </PmtId>
+                    <Amt>
+                        <InstdAmt Ccy="USD">147860.00</InstdAmt>
+                    </Amt>
+                    <ChrgBr>SHAR</ChrgBr>
+                    <CdtrAgt>
+                        <FinInstnId>
+                                <BIC>CHASCATTCTS</BIC>
+                            <Nm>JP Morgan Chase</Nm>
+                            <PstlAdr>
+                                <Ctry>CA</Ctry>
+                            </PstlAdr>
+                        </FinInstnId>
+                    </CdtrAgt>
+                    <Cdtr>
+                        <Nm>Patheon Inc.</Nm>
+                        <PstlAdr>
+                            <StrtNm>24462 Network Place</StrtNm>
+                                <PstCd>60673-1244</PstCd>
+                                <TwnNm>Chicago</TwnNm>
+                                <CtrySubDvsn>IL</CtrySubDvsn>
+                            <Ctry>US</Ctry>
+                        </PstlAdr>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                                <Othr>
+                                    <Id>4670530212</Id>
+                                </Othr>
+                        </Id>
+                    </CdtrAcct>
+                        <RmtInf>
+                            <Ustrd>90088263, 90088261, 90088265, 90088262</Ustrd>
+                        </RmtInf>
+                </CdtTrfTxInf>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId>000001395</EndToEndId>
+                    </PmtId>
+                    <Amt>
+                        <InstdAmt Ccy="EUR">98839.77</InstdAmt>
+                    </Amt>
+                    <ChrgBr>SHAR</ChrgBr>
+                    <CdtrAgt>
+                        <FinInstnId>
+                                <BIC>ABNANL2A</BIC>
+                            <Nm>ABN AMRO</Nm>
+                            <PstlAdr>
+                                <Ctry>NL</Ctry>
+                            </PstlAdr>
+                        </FinInstnId>
+                    </CdtrAgt>
+                    <Cdtr>
+                        <Nm>QPS Netherlands BV</Nm>
+                        <PstlAdr>
+                            <StrtNm>Petrus Campersingel 123 9713</StrtNm>
+                                <TwnNm>AG Groningen</TwnNm>
+                            <Ctry>NL</Ctry>
+                        </PstlAdr>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                                <IBAN>NL40ABNA0458558028</IBAN>
+                        </Id>
+                    </CdtrAcct>
+                        <RmtInf>
+                            <Ustrd>180145-54</Ustrd>
+                        </RmtInf>
+                </CdtTrfTxInf>
+                <CdtTrfTxInf>
+                    <PmtId>
+                        <EndToEndId>000001396</EndToEndId>
+                    </PmtId>
+                    <Amt>
+                        <InstdAmt Ccy="USD">658.66</InstdAmt>
+                    </Amt>
+                    <ChrgBr>SHAR</ChrgBr>
+                    <CdtrAgt>
+                        <FinInstnId>
+                                <ClrSysMmbId>
+                                    <MmbId>121000248</MmbId>
+                                </ClrSysMmbId>
+                            <Nm>Wells Fargo Bank</Nm>
+                            <PstlAdr>
+                                <Ctry>US</Ctry>
+                            </PstlAdr>
+                        </FinInstnId>
+                    </CdtrAgt>
+                    <Cdtr>
+                        <Nm>Staples Business Credit</Nm>
+                        <PstlAdr>
+                            <StrtNm>PO Box 105638</StrtNm>
+                                <PstCd>30348-5638</PstCd>
+                                <TwnNm>Atlanta</TwnNm>
+                                <CtrySubDvsn>GA</CtrySubDvsn>
+                            <Ctry>US</Ctry>
+                        </PstlAdr>
+                    </Cdtr>
+                    <CdtrAcct>
+                        <Id>
+                                <Othr>
+                                    <Id>4855570925</Id>
+                                </Othr>
+                        </Id>
+                    </CdtrAcct>
+                        <RmtInf>
+                            <Ustrd>7201192499-0-1, 7201318683-0-1, 7200872415-0-3</Ustrd>
+                        </RmtInf>
+                </CdtTrfTxInf>
+        </PmtInf>
+    </CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,27 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "d467289aa55bd7cc06f4a7149abff309cfe2493ff0f2a69c8478cdc43324bb31"
+        },
+        "pipfile-spec": 6,
+        "requires": {},
+        "sources": [
+            {
+                "name": "artifactory",
+                "url": "https://artifactory.vant.com/artifactory/api/pypi/pypi-all/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pyyaml": {
+            "hashes": [
+                "sha256:19bb3ac350ef878dda84a62d37c7d5c17a137386dde9c2ce7249c7a21d7f6ac9",
+                "sha256:c36c938a872e5ff494938b33b14aaa156cb439ec67548fcab3535bb78b0846e8"
+            ],
+            "index": "artifactory",
+            "version": "==3.11"
+        }
+    },
+    "develop": {}
+}
