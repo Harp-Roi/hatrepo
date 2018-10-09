@@ -1,0 +1,125 @@
+<html>
+<head> 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-select@latest"></script>
+<br>
+<br>
+
+<img src="http://roivant.com/wp-content/themes/roivant/images/logo@2x.png" style="display: block; position: relative; margin: auto; padding:20px">
+<br>
+<br>
+    <div class="container" id="app" style="border-style: solid;background-color: coral;">
+        
+        <br>
+            <h1>{{report.reportName}}</h1>
+            <br>
+
+                <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select a report
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li v-for="report in reports" ><a href="#">{{report}}</a></li>
+                </ul>
+            </div>
+  <hr>     
+
+<title>Upload new File</title>
+<h1>Upload new File</h1>
+<form action="http://127.0.0.1:5000/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" multiple>
+    <input type="submit" value="Upload">
+</form>
+<br>
+<hr>
+<h1>Create A User</h1>
+<form action="http://127.0.0.1:5000/post_test" method="post">
+  First name:<br>
+  <input type="text" name="email" value="John.Doe@Roivant.com">
+  <br>
+  Last name:<br>
+  <input type="text" name="password" value="1234">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
+
+<h1 v-if="files.length>0">My Files</h1>
+<ul id="example-1" >
+  <li v-for="file in files">
+    {{ file }}
+  </li>
+</ul>
+<hr>
+<h1 v-if="users.length>0">Users In DB</h1>
+<ul id="example-1" v-for="user in users" >
+  <li v-for="(value, key) in user">
+    {{ key }} : {{value}}
+  </li>
+</ul>
+
+    </div>
+
+
+
+<script>
+    Vue.component("v-select", VueSelect.VueSelect);
+
+    var vm = new Vue({
+        el: "#app",
+        
+        // components: {
+        //     "vue-form-generator": VueFormGenerator.component
+        // },
+
+        data:{
+            report: {reportName:"Please Select A Report", reportID:"0"},
+            reports: ["Employee List","Market Cap", "Vendor List"],
+            options: [
+          { reportName: "Employee List", reportID: "1" },
+          { reportName: "Market Cap", reportID: "2" },
+          { reportName: "Vendor List", reportID: "3" }
+
+        ],
+        files: {},
+        users: []
+        },
+          // Fetches file list and user list when the component is created.
+        created: function() {
+            axios.get("http://127.0.0.1:5000/list_files")
+                .then(response => {
+                // JSON responses are automatically parsed.
+                this.files = response.data
+                })
+                .catch(e => {
+                this.errors.push(e)
+                });
+            axios.get("http://127.0.0.1:5000/list_users")
+                .then(response => {
+                // JSON responses are automatically parsed.
+                this.users = response.data
+                })
+                .catch(e => {
+                this.errors.push(e)
+                })
+        }
+    });
+
+</script>
+
+<style>
+</style>
+
+</body>
+</html>
